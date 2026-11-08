@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Abhishek Bhaduri, AI Product Strategy & Operations</title>
+  <meta name="description" content="Abhishek Bhaduri builds AI agents enterprises trust to act: agentic systems, human-in-the-loop governance and on-device AI. Former Swiggy CTO office, Belong.co, Primordial Ventures.">
+  <meta property="og:title" content="Abhishek Bhaduri">
+  <meta property="og:description" content="AI product strategy and operations: agentic and on-device AI.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='14' y='14' width='72' height='72' rx='6' fill='%231D2340'/><rect x='30' y='30' width='40' height='40' fill='%23C8962E'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="mark" href="#top" id="mark-name"></a>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <div class="top-actions">
+      <a class="pill solid" id="top-resume" href="#">Résumé</a>
+      <button class="pill" id="open-palette" aria-haspopup="dialog" aria-label="Jump to a section">Jump <kbd>/</kbd></button>
+      <button class="pill round" id="theme-toggle" aria-label="Switch colour theme"></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <div class="who">
+          <span class="avatar" id="avatar" aria-hidden="true"></span>
+          <p class="role" id="h-role"></p>
+        </div>
+        <h1 id="h-name"></h1>
+        <p class="headline" id="h-headline"></p>
+        <div class="ctas" id="h-ctas"></div>
+        <p class="open-to" id="h-open"></p>
+      </div>
+      <figure class="chip">
+        <div class="die" id="die" role="tablist" aria-label="Career chapters"></div>
+        <figcaption class="readout" id="readout" aria-live="polite"></figcaption>
+      </figure>
+    </section>
+
+    <!-- AT A GLANCE -->
+    <section class="glance-band" aria-label="At a glance">
+      <dl class="glance" id="glance"></dl>
+    </section>
+
+    <!-- WORK -->
+    <section class="band" id="work" data-section="Work">
+      <div class="band-head">
+        <h2>Case studies</h2>
+        <p class="lede">What I built, how I decided, and what I'd tell the next PM. Open any one for the full story.</p>
+      </div>
+      <div id="featured-case"></div>
+      <ul class="cases" id="cases"></ul>
+    </section>
+
+    <!-- VENTURE -->
+    <section class="band" id="venture" data-section="Venture">
+      <div class="band-head">
+        <h2>Venture capital</h2>
+        <p class="lede" id="v-blurb"></p>
+      </div>
+      <div class="venture">
+        <div>
+          <h3 id="v-title"></h3>
+          <ul class="ticks" id="v-did"></ul>
+        </div>
+        <div>
+          <h3>How I underwrite AI companies</h3>
+          <ol class="lens" id="v-lens"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="band" id="writing" data-section="Writing">
+      <div class="band-head">
+        <h2>Writing</h2>
+        <p class="lede">Long-form on AI markets, agents and operating models, on <a id="w-sub" href="#">Substack</a>.</p>
+      </div>
+      <div id="w-featured"></div>
+      <ul class="posts" id="w-list"></ul>
+    </section>
+
+    <!-- RESEARCH & PRESS -->
+    <section class="band" id="research" data-section="Research">
+      <div class="band-head">
+        <h2>Research and press</h2>
+        <p class="lede">Published work and coverage from my founder years at Manipal.</p>
+      </div>
+      <div class="research" id="research-list"></div>
+    </section>
+
+    <!-- ASK -->
+    <section class="band" id="ask" data-section="Ask">
+      <div class="band-head">
+        <h2>Ask about my work</h2>
+        <p class="lede">Recruiter in a hurry? Ask a question and get an answer drawn only from what's on this page.</p>
+      </div>
+      <div class="ask">
+        <div class="ask-log" id="ask-log" aria-live="polite"></div>
+        <div class="chips" id="ask-chips"></div>
+        <form class="ask-form" id="ask-form">
+          <label class="sr" for="ask-input">Your question</label>
+          <input id="ask-input" type="text" placeholder="e.g. What did he build as a student founder?" autocomplete="off">
+          <button class="pill solid" type="submit">Ask</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="band" id="about" data-section="About">
+      <div class="band-head"><h2>Off the clock</h2></div>
+      <dl class="off" id="off"></dl>
+    </section>
+    <!-- BOOK -->
+    <section class="band" id="book" data-section="Book a call">
+      <div class="book">
+        <div class="book-text">
+          <h2 id="b-title"></h2>
+          <p class="lede" id="b-blurb"></p>
+          <ul class="ticks" id="b-points"></ul>
+          <p class="book-actions" id="b-actions"></p>
+        </div>
+        <div class="book-embed" id="b-embed"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" id="contact" data-section="Contact">
+   <div class="foot-in">
+    <h2>Let's talk</h2>
+    <p>Hiring for agentic AI, on-device AI or an enterprise platform that needs a product leader? I reply to every email.</p>
+    <p class="foot-actions">
+      <a class="pill gold" href="#book">Book a call</a>
+      <a class="pill ghost" id="mail-link" href="#">Email me</a>
+      <button class="pill ghost" id="copy-mail">Copy email address</button>
+      <a class="pill ghost" id="foot-li" href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+    <p class="small" id="foot-meta"></p>
+   </div>
+  </footer>
+
+  <!-- Case study reader -->
+  <dialog class="reader" id="reader" aria-labelledby="r-title">
+    <div class="reader-bar">
+      <button class="pill" id="r-prev" aria-label="Previous case study">Previous</button>
+      <button class="pill" id="r-next" aria-label="Next case study">Next</button>
+      <button class="pill" id="r-close">Close</button>
+    </div>
+    <article id="r-body"></article>
+  </dialog>
+
+  <!-- Jump menu -->
+  <dialog class="palette" id="palette" aria-label="Jump to">
+    <input id="palette-input" type="text" placeholder="Type a section, case study or link" autocomplete="off">
+    <ul id="palette-list" role="listbox"></ul>
+    <p class="small">Enter to open, Esc to close</p>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
